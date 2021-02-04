@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Toggle from './ToggleRenderProps';
+import ToggleRPC from './ToggleRPC';
+import MouseTracker from './MouseTracker';
 
 function App() {
   return (
@@ -10,16 +12,29 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <MouseTracker />
         <Toggle
           render={({ on, toggle }) => {
             return (
               <div>
-                { on && <h1>Show me</h1>}
+                { on && <h1>Show me Render React Props</h1>}
                 <button onClick={toggle}>Show / Hide</button>
               </div>
             )
           }}
         />
+
+        <ToggleRPC>
+          {
+            ({ on, toggle }) => (
+              <div>
+                { on && <h1>Show me RPC</h1>}
+                <button onClick={toggle}>Show / Hide RPC</button>
+              </div>
+            )
+          }
+        </ToggleRPC>
+
         <a
           className="App-link"
           href="https://reactjs.org"
