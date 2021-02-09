@@ -3,6 +3,7 @@ import './App.css';
 import Toggle from './ToggleRenderProps';
 import ToggleRPC from './ToggleRPC';
 import MouseTracker from './MouseTracker';
+import Portal from './Portal';
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
             )
           }
         </ToggleRPC>
+        <Portal>
+          <h1>Hi I'm a Portal</h1>
+        </Portal>
 
         <a
           className="App-link"
