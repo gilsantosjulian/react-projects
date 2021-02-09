@@ -34,6 +34,17 @@ function App() {
             )
           }
         </ToggleRPC>
+        {/* Example of Fragment */}
+        <ToggleRPC>
+          {
+            ({ on, toggle }) => (
+              <>
+                { on && <h1>Show me RPC</h1>}
+                <button onClick={toggle}>Show / Using Fragment</button>
+              </>
+            )
+          }
+        </ToggleRPC>
 
         <a
           className="App-link"
