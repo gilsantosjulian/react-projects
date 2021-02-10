@@ -50,6 +50,20 @@ function App() {
           <h1>Hi I'm a Portal</h1>
         </Portal>
 
+        <ToggleRPC>
+          {
+            ({ on, toggle }) => (
+              <>
+                { on && <h1>Show me RPC</h1>}
+                <button onClick={toggle}>Show / Using Fragment and Portal</button>
+                <Portal>
+                  <h1>Hi I'm a Portal 2</h1>
+                </Portal>
+              </>
+            )
+          }
+        </ToggleRPC>
+
         <a
           className="App-link"
           href="https://reactjs.org"
