@@ -4,6 +4,7 @@ import Toggle from './ToggleRenderProps';
 import ToggleRPC from './ToggleRPC';
 import MouseTracker from './MouseTracker';
 import Portal from './Portal';
+import Parent from './portals/Parent';
 
 function App() {
   return (
@@ -72,6 +73,9 @@ function App() {
         >
           Learn React
         </a>
+
+        <Parent />
+
       </header>
     </div>
   );
